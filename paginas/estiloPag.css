@@ -11,9 +11,6 @@ body{
 .ativado{
     filter: brightness(75%);
 }
-#tapete{
-    transform: skew(-15deg, 0deg)
-}
 .ativado:hover{
     filter: brightness(120%);
 }
