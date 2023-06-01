@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "minecraft";
+    src: url(../fontes/Minecraftia-Regular.ttf);
+}
+body{
+    font-family: "minecraft";
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#arrow_head{
+    background-image: url(../imagens/item/tipped_arrow_head.png);
+    background-size: 100%;
+}
+img{
+    image-rendering: pixelated;
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+img:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+#esquerda{
+    display: block;
+    position: absolute;
+    left: 0vw;
+    top: 0px;
+}
+#direita{
+    display: block;
+    position: absolute;
+    left: 50vw;
+    top: 0px;
+}
+section{
+    margin: 20px;
+}
