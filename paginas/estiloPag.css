@@ -8,6 +8,15 @@ body{
 ::-webkit-scrollbar{
     display: none;
 }
+.ativado{
+    filter: brightness(75%);
+}
+#tapete{
+    transform: skew(-15deg, 0deg)
+}
+.ativado:hover{
+    filter: brightness(120%);
+}
 #arrow_head{
     background-image: url(../imagens/item/tipped_arrow_head.png);
     background-size: 100%;
