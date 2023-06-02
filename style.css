@@ -20,18 +20,19 @@ a{
     position: absolute;
     top: 10vh;
     left: 15vw;
-    width: 82vw;
+    width: 100vw;
     height: 170vh;
     
 }
 body{
     font-family: "Minecraft";
+    overflow-x: hidden;
 }
 header{
     position: absolute;
     top: 0px;
     height: 10vh;
-    width: 96vw;
+    width: 100vw;
     background-color: gray;
     text-align: center;
 }
