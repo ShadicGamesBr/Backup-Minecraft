@@ -1,9 +1,19 @@
 var fotos = document.querySelectorAll("img");
 var info = document.getElementById("info");
+
 for(i =0; i<fotos.length; i++){
     fotos[i].addEventListener("mouseenter", entrar)
     fotos[i].addEventListener("mouseleave", sair)
-    fotos[i].addEventListener("mousemove", mover)
+    fotos[i].addEventListener("mousemove", function(event){
+        var posX = event.pageX;
+        var posY = event.pageY;
+        info.style.top = `${posY+25}px`
+        info.style.left = `${posX+20}px`
+        var nome = event.target;
+        var elemento = nome.dataset.nome;
+        info.innerHTML = elemento
+        
+    })
 }
 function entrar(){
     info.style.display = "block"
@@ -15,11 +25,10 @@ function clicar(){
     window.alert("teste")
 }
 
-function mover(event){
-    var posX = event.clientX;
-    var posY = event.clientY;
-    info.style.top = `${posY+25}px`
-    info.style.left = `${posX+20}px`
+
+
+/*function mover(event){
+    
 
 
 
@@ -53,5 +62,5 @@ function mover(event){
     }else if(desc.dataset.atribom === "sim"){
         info.innerHTML += `<span style='color:#00ff00'>${desc.dataset.linha1}`
     }
- */   
 }
+ */   

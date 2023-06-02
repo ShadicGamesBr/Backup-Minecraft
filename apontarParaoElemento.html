@@ -86,7 +86,7 @@
     }
 
     for(i =0;i<numeros.length;i++){
-        numeros[i].addEventListener("mouseenter", function(event){/**/
+        numeros[i].addEventListener("mouseenter", function(event){/*escolhe todos os elementos com uma função de mover e com ação de criar uma variável nome e elemento, uma que escolhe o elemento com o target e outra variável para pegar o elemento escolhido e pegar o innerHTML dele, ou seja pegar o nome real dele*/
             var nome = event.target;
             var elemento = nome.innerHTML;
             res.innerHTML = `<span style='color:#E99E27'>Elemento: ${elemento}</span>`

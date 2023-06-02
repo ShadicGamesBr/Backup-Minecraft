@@ -16,9 +16,10 @@ body{
     cursor: pointer;
 }
 #info{
+    padding: 10px;
     position: absolute;
     background-color: rgb(0, 0, 0);
-    width: 100px;
+    width: fit-content;
     text-align: center;
     height: 50px;
     line-height: 50px;
@@ -28,6 +29,7 @@ body{
     z-index: 999;
     height: fit-content;
     display: none;
+    border: url(../imagens/border.png);
 }
 ::-webkit-scrollbar{
     display: none;
