@@ -16,28 +16,39 @@ body{
     cursor: pointer;
 }
 #info{
-    padding: 10px;
+    image-rendering: pixelated;
     position: absolute;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
     width: fit-content;
     text-align: center;
     height: 50px;
     line-height: 50px;
     color: white;
     cursor: pointer;
-    border: 3px solid rgb(54, 0, 104);
+    border: 20px solid #140014;
+    border-image-source: url(../imagens/border-item.png);
+    border-image-slice: 5;
+    border-image-repeat: repeat;
+    border-image-outset: 8px;
     z-index: 999;
     height: fit-content;
     display: none;
     border: url(../imagens/border.png);
 }
 ::-webkit-scrollbar{
-    background-color: red;
+    image-rendering: pixelated;
+    background-image: url(../imagens/scrollbar.png);
+    background-size: 100% 100%;
     width: 30px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: blue;
-    border-radius: 4px;
+    background-image: url("../imagens/slider-desativ.png");
+    background-size: 100% 100%;
+    height: 50px;
+    image-rendering: pixelated;
+}
+::-webkit-scrollbar-thumb:active{
+    background-image: url(../imagens/slider-atived.png);
 }
 .ativado{
     filter: brightness(75%);

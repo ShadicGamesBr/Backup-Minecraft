@@ -3,7 +3,7 @@ aside{
     left: 0px;
     top: 0px;
     width: 15vw;
-    height: 180vh;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     background-color: red;
@@ -21,7 +21,7 @@ a{
     top: 10vh;
     left: 15vw;
     width: 85vw;
-    height: 170vh;
+    height: 90vh;
      
 }
 ::-webkit-scrollbar{
@@ -42,11 +42,11 @@ header{
 aside img{
     transform: translate(-50%);
     position: relative;
-    padding: 20px;
+    padding: 5px;
     left: 50%;
     image-rendering: pixelated;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-size: 1410%;
     background-position: -35px -84px;
 }
