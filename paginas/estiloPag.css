@@ -32,7 +32,12 @@ body{
     border: url(../imagens/border.png);
 }
 ::-webkit-scrollbar{
-    display: none;
+    background-color: red;
+    width: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blue;
+    border-radius: 4px;
 }
 .ativado{
     filter: brightness(75%);
