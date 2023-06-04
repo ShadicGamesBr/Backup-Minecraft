@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(imagens/estrelas.png);
+            mix-blend-mode: lighten;
+            image-rendering: pixelated;
+            overflow-y:hidden;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        img{
+            
+            image-rendering: pixelated;
+        }
+        #sol{
+            height: 200px;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+        #lua{
+            margin-top: 50px;
+            height: 200px;
+            width: 200px;
+
+        }
+        #ciclo{
+            text-align: center;
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+        <span id="output">teste</span>
+        <div id="ciclo">
+            
+            <img id="sol" src="imagens/environment/sun.png" alt="">
+            <br>
+            <img id="lua" src="imagens/lua.png" alt="">
+        </div>
+    <main>
+        <input type="button" id="action" value="Ação">
+        <br>
+        <input type="range" min="0" max="360" value="180" name="range" id="irange">
+        <br>
+        <input type="reset" value="Resetar tempo">
+    </main>
+
+    <script>
+        //var hora = new Date()
+        var hora = 12 
+        var botao = document.getElementById("action")
+        var range = document.getElementById("irange")
+        range.addEventListener("input", att)
+        var ciclo = document.getElementById("ciclo")
+        var output = document.getElementById("output")
+        botao.addEventListener("click", clicar)
+        function clicar(){
+            //window.alert(`${hora.getHours()}:${hora.getMinutes()}:${hora.getSeconds()}`)
+            window.alert(range.value)
+        }
+        function att(){
+            ciclo.style.transform = `rotate(${range.value}deg)`
+        }
+    </script>
+</body>
+</html>
