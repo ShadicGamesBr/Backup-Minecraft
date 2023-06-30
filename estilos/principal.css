@@ -21,7 +21,6 @@
 }
 #inventario iframe{
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
     width: 162px;
     height: 54px;
     top: 53px;
@@ -40,7 +39,8 @@
         background-color: red;
     }
     #inventario{
-        transform: translate(-50%, -50%) scale(2.5);
+        top: 55%;
+        transform: translate(-50%, -50%) scale(2);
     }
   }
 
@@ -50,6 +50,7 @@
         background-color: blue;
     }
     #inventario{
+        top: 55%;
         transform: translate(-50%, -50%) scale(3);
     }
   }
@@ -60,7 +61,8 @@
         background-color: green;
     }
     #inventario{
-        transform: translate(-50%, -50%) scale(4);
+        top: 55%;
+        transform: translate(-50%, -50%) scale(3);
     }
   }
 
@@ -71,6 +73,7 @@
         background-color: yellow;
     }
     #inventario{
-        transform: translate(-50%, -50%) scale(5);
+        top: 55%;
+        transform: translate(-50%, -50%) scale(3);
     }
   }
