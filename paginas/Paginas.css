@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    image-rendering: pixelated;
+}
+img{
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}

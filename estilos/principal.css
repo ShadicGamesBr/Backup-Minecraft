@@ -1,0 +1,76 @@
+@charset "UTF-8";
+*{
+    image-rendering: pixelated;
+    margin: 0px;
+    padding: 0px;
+}
+/*Celular: // - 768px
+  Tablets: Width 768px - 992px
+  Desktop/Notebooks 992px - 1200px
+  TV: 1200px*/
+
+#inventario{
+    background-image: url(../imagens/gui/container/creative_inventory/tab_inventory.png);
+    height: 136px;
+    width: 195px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-position: center center;
+    transform: translate(-50%, -50%) scale(2);
+}
+#inventario iframe{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 162px;
+    height: 54px;
+    top: 53px;
+    left: 8px;
+}
+#inventario p {
+    display: inline-block;
+}   
+
+/*--------------------------------------*/
+
+
+  /*Celular*/
+  @media screen and (max-width:768px) { 
+    body{
+        background-color: red;
+    }
+    #inventario{
+        transform: translate(-50%, -50%) scale(2.5);
+    }
+  }
+
+  /*Tablets*/
+  @media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-color: blue;
+    }
+    #inventario{
+        transform: translate(-50%, -50%) scale(3);
+    }
+  }
+
+  /*Desktops*/
+  @media screen and (min-width:992px) and  (max-width:1200px) {
+    body{
+        background-color: green;
+    }
+    #inventario{
+        transform: translate(-50%, -50%) scale(4);
+    }
+  }
+
+  /*TVs*/
+
+  @media screen and (min-width:1200px) {
+    body{
+        background-color: yellow;
+    }
+    #inventario{
+        transform: translate(-50%, -50%) scale(5);
+    }
+  }
