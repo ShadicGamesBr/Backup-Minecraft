@@ -3,33 +3,24 @@
     image-rendering: pixelated;
     margin: 0px;
     padding: 0px;
+    font-family: "minecraft";
+}
+
+@font-face {
+  font-family: "minecraft";
+  src: url(../fontes/Minecraftia-Regular.ttf);
 }
 /*Celular: // - 768px
   Tablets: Width 768px - 992px
   Desktop/Notebooks 992px - 1200px
   TV: 1200px*/
-
-#inventario{
-    background-image: url(../imagens/gui/container/creative_inventory/tab_inventory.png);
-    height: 136px;
-    width: 195px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-position: center center;
-    transform: translate(-50%, -50%) scale(2);
+#menu{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  position: absolute;
+  left: 50vw;
 }
-#inventario iframe{
-    position: relative;
-    width: 162px;
-    height: 54px;
-    top: 53px;
-    left: 8px;
-}
-#inventario p {
-    display: inline-block;
-}   
-
 
 /*--------------------------------------*/
 
