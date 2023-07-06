@@ -55,7 +55,9 @@
     }
     
     p{
-      width: 250px;
+      height: 40px;
+      line-height: 40px;
+      width: 350px;
     }
   }
 
@@ -66,8 +68,8 @@
     }
     p{
       width: 400px;
-      height: 30px;
-      line-height: 30px;
+      height: 60px;
+      line-height: 60px;
     }
   }
 
@@ -87,10 +89,10 @@
 
   @media screen and (min-width:1200px) {
     p{
-      font-size: 2vh;
-      width: calc(40vw - 40px);
-      height: 6vh;
-      line-height: 6vh;
+      font-size: 3vh;
+      width: calc(50vw - 40px);
+      height: 8vh;
+      line-height: 8vh;
     }
     
   }
