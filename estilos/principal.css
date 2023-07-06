@@ -25,7 +25,7 @@
     background-image: url(../imagens/Tabs/1.png);
     background-size: 100% 100%;
     text-align: center;
-    margin: 10px;
+    margin: 0.5vw;
     vertical-align: middle;
     cursor: pointer;
     user-select: none;
@@ -33,16 +33,20 @@
   p:hover{
     background-image: url(../imagens/Tabs/2.png);
   }
+  p:active{
+    background-image: url(../imagens/Tabs/3.png);
+  }
+  
   #tittle{
     transform: translate(-50%, 10px);
     position: absolute;
     left: 50vw;
-    width: 50vw;
+    width: 80vh;
     user-select: none;
   }
 
   #background{
-    z-index: -1;
+    z-index: -999;
     overflow: hidden;
   }
 /*--------------------------------------*/
@@ -50,9 +54,6 @@
 
   /*Celular*/
   @media screen and (max-width:768px) { 
-    body{
-        background-color: red;
-    }
     
     p{
       height: 40px;
@@ -63,9 +64,6 @@
 
   /*Tablets*/
   @media screen and (min-width:768px) and (max-width:992px) {
-    body{
-        background-color: blue;
-    }
     p{
       width: 400px;
       height: 60px;
@@ -75,9 +73,6 @@
 
   /*Desktops*/
   @media screen and (min-width:992px) and  (max-width:1200px) {
-    body{
-        background-color: green;
-    }
     p{
       width: 500px;
       height: 50px;
