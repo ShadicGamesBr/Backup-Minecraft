@@ -4,7 +4,6 @@ var bot = document.getElementsByTagName("p");
 
 action.addEventListener("click", clicar)
 function clicar(){
-    window.alert(bot.length)
 }
 
 for(i = 0; i < bot.length ; i++){

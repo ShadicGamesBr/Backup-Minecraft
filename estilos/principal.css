@@ -15,7 +15,9 @@
   Desktop/Notebooks 992px - 1200px
   TV: 1200px*/
 
-
+  body{
+    background-image: url(../background.gif);
+  }
   p{
     position: relative;
     top: 50vh;
