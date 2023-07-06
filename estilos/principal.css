@@ -14,14 +14,37 @@
   Tablets: Width 768px - 992px
   Desktop/Notebooks 992px - 1200px
   TV: 1200px*/
-#menu{
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50vh;
-  position: absolute;
-  left: 50vw;
-}
 
+
+  p{
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-image: url(../imagens/Tabs/1.png);
+    background-size: 100% 100%;
+    text-align: center;
+    margin: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+  }
+  p:hover{
+    background-image: url(../imagens/Tabs/2.png);
+  }
+  #tittle{
+    transform: translate(-50%, 10px);
+    position: absolute;
+    left: 50vw;
+    width: 50vw;
+    user-select: none;
+  }
+
+  #background{
+    z-index: -1;
+    overflow: hidden;
+  }
 /*--------------------------------------*/
 
 
@@ -30,9 +53,9 @@
     body{
         background-color: red;
     }
-    #inventario{
-        top: 55%;
-        transform: translate(-50%, -50%) scale(2);
+    
+    p{
+      width: 250px;
     }
   }
 
@@ -41,9 +64,10 @@
     body{
         background-color: blue;
     }
-    #inventario{
-        top: 55%;
-        transform: translate(-50%, -50%) scale(3);
+    p{
+      width: 400px;
+      height: 30px;
+      line-height: 30px;
     }
   }
 
@@ -52,20 +76,21 @@
     body{
         background-color: green;
     }
-    #inventario{
-        top: 55%;
-        transform: translate(-50%, -50%) scale(3);
+    p{
+      width: 500px;
+      height: 50px;
+      line-height: 50px;
     }
   }
 
   /*TVs*/
 
   @media screen and (min-width:1200px) {
-    body{
-        background-color: yellow;
+    p{
+      font-size: 2vh;
+      width: calc(40vw - 40px);
+      height: 6vh;
+      line-height: 6vh;
     }
-    #inventario{
-        top: 55%;
-        transform: translate(-50%, -50%) scale(3);
-    }
+    
   }

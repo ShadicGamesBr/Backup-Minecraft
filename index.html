@@ -6,14 +6,22 @@
     <title>Minecraft</title>
     <link rel="stylesheet" href="estilos/principal.css" media="screen">
     <link rel="shortcut icon" href="imagens/minecraft.ico" type="image/x-icon">
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 </head>
 <body>
-    <div id="menu">
-        <img src="imagens/Tabs/1.png" alt="" srcset="">
-        <img src="imagens/Tabs/1.png" alt="" srcset="">
-        <img src="imagens/Tabs/1.png" alt="" srcset="">
-    </div>
+    <main>
+        <img draggable="false" id="tittle" src="imagens/gui/title/minecraft.png" alt="">
+        <p>Um jogador</p>
+        <p>Multijogador</p>
+        <p>Opções</p>
+    </main>
+
+    <a-scene id="background">
+        <a-sky  src="teste.jpg" rotation="0 -130 0"></a-sky>
+        <a-text font="kelsonsans" value="Puy de Sancy, France" width="6" position="-2.5 0.25 -1.5"rotation="0 15 0"></a-text>
+      </a-scene>
 </body>
     <script src="scripts/Python.py"></script>
     <script src="scripts/JS.js"></script>
+    
 </html>
