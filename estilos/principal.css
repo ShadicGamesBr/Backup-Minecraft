@@ -43,6 +43,25 @@ a{
     top: 20vh;
     background-repeat: no-repeat;
   }
+
+  /*.quad{
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    background-color: blue;
+    height: 100px;
+    z-index: 2;
+  }*/
+  #slots{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 195px;
+    height: 136px;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 50vw;
+    top: 50vh;
+  }
+
   p{
     position: relative;
     top: 50vh;
