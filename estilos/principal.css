@@ -5,11 +5,26 @@
     padding: 0px;
     font-family: "minecraft";
 }
+a{
+  text-decoration: none;
+}
 
 @font-face {
   font-family: "minecraft";
   src: url(../fontes/Minecraftia-Regular.ttf);
 }
+
+#inventary img{
+  position: relative;
+  transform: translate(-50%, -50%) scale(2.5);
+  height: 135px;
+  width: 195px;
+  top: 40vh;
+  left: 50vw;
+  z-index: -1;
+}
+
+
 /*Celular: // - 768px
   Tablets: Width 768px - 992px
   Desktop/Notebooks 992px - 1200px
@@ -43,12 +58,28 @@
     transform: translate(-50%, 10px);
     position: absolute;
     left: 50vw;
-    width: 80vh;
+    width: 70vh;
     user-select: none;
+    z-index: 1;
   }
-
+  #mensagem{
+    position: relative;
+    transform: translate(10px, 0px) rotate(-20deg);
+    left: 50vw;
+    z-index: 2;
+    color: rgb(255, 255, 0);
+    animation: pulsar 2s linear infinite;
+  }
+  @keyframes pulsar{
+    0%{
+      font-size: 2em;
+    }
+    50%{
+      font-size: 2.1em;
+    }
+  }
   #background{
-    z-index: -999;
+    z-index: -1;
     overflow: hidden;
   }
 /*--------------------------------------*/
