@@ -33,6 +33,16 @@ a{
   body{
     background-image: url(../background.gif);
   }
+  #titulo{
+    position: absolute;
+    background-image: url(../imagens/gui/title/minecraft.png);
+    background-size: 100%;
+    width: 256px;
+    height: 64px;
+    left: 50vw;
+    top: 20vh;
+    background-repeat: no-repeat;
+  }
   p{
     position: relative;
     top: 50vh;
@@ -53,34 +63,10 @@ a{
   p:active{
     background-image: url(../imagens/Tabs/3.png);
   }
-  
-  #tittle{
-    transform: translate(-50%, 10px);
-    position: absolute;
-    left: 50vw;
-    width: 70vh;
-    user-select: none;
-    z-index: 1;
-  }
-  #mensagem{
-    position: relative;
-    transform: translate(10px, 0px) rotate(-20deg);
-    left: 50vw;
-    z-index: 2;
-    color: rgb(255, 255, 0);
-    animation: pulsar 2s linear infinite;
-  }
-  @keyframes pulsar{
-    0%{
-      font-size: 2em;
-    }
-    50%{
-      font-size: 2.1em;
-    }
-  }
   #background{
     z-index: -1;
     overflow: hidden;
+    background-attachment: fixed;
   }
 /*--------------------------------------*/
 
@@ -93,6 +79,9 @@ a{
       line-height: 40px;
       width: 350px;
     }
+    #titulo{
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
 
   /*Tablets*/
@@ -102,6 +91,9 @@ a{
       height: 60px;
       line-height: 60px;
     }
+    #titulo{
+      transform: translate(-50%, -50%) scale(2);
+    }
   }
 
   /*Desktops*/
@@ -110,6 +102,9 @@ a{
       width: 500px;
       height: 50px;
       line-height: 50px;
+    }
+    #titulo{
+      transform: translate(-50%, -50%) scale(2.5);
     }
   }
 
@@ -121,6 +116,9 @@ a{
       width: calc(50vw - 40px);
       height: 8vh;
       line-height: 8vh;
+    }
+    #titulo{
+      transform: translate(-50%, -50%) scale(3);
     }
     
   }
