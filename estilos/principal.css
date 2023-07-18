@@ -49,11 +49,13 @@ a{
     width: 161px;
     height: 76px;
     background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding: 0px;
   }
 
   #inventory{
     background-image: url(../imagens/gui/container/creative_inventory/tab_inventory.png);
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -100%) scale(2.6);
     position: relative;
     top: 50vh;
     left: 50vw;

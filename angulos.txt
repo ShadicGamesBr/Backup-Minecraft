@@ -1,0 +1,13 @@
+É possível utilizar coordenadas para determinar o ângulo no seu exemplo. Vou explicar como você pode fazer isso:
+
+Suponha que o quadrado esteja em um sistema de coordenadas cartesianas, com o ponto de origem (0, 0) no canto inferior esquerdo. Se o ponto aleatório que você escolheu tiver coordenadas (x, y), e um dos vértices adjacentes tiver coordenadas (a, b), então você pode utilizar a fórmula da tangente para calcular o ângulo.
+
+O ângulo θ entre os dois pontos pode ser encontrado usando a fórmula:
+
+θ = arctan((y - b) / (x - a))
+
+Nessa fórmula, arctan é a função arcotangente, que calcula o ângulo cuja tangente é a razão (y - b) / (x - a). A função arctan normalmente retorna o ângulo em radianos, então, se você quiser o resultado em graus, pode converter multiplicando o valor em radianos por (180 / π).
+
+Lembre-se de que a fórmula acima retornará um ângulo no intervalo de -π/2 a π/2 radianos (-90° a 90°). Se você quiser determinar o ângulo completo em relação a uma linha de referência, pode adicionar ou subtrair 180° conforme necessário.
+
+Essa é uma forma matemática de calcular o ângulo com base nas coordenadas dos pontos.
