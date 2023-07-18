@@ -14,15 +14,6 @@ a{
   src: url(../fontes/Minecraftia-Regular.ttf);
 }
 
-#inventary img{
-  position: relative;
-  transform: translate(-50%, -50%) scale(2.5);
-  height: 135px;
-  width: 195px;
-  top: 40vh;
-  left: 50vw;
-  z-index: -1;
-}
 
 
 /*Celular: // - 768px
@@ -53,15 +44,22 @@ a{
     z-index: 2;
   }*/
   #slots{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 195px;
-    height: 136px;
+    position: relative;
+    transform: translate(8px, 53px);
+    width: 161px;
+    height: 76px;
     background-color: rgba(0, 0, 0, 0.5);
-    left: 50vw;
-    top: 50vh;
   }
 
+  #inventory{
+    background-image: url(../imagens/gui/container/creative_inventory/tab_inventory.png);
+    transform: translate(-50%, -50%) scale(2);
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    height: 136px;
+    width: 195px;
+  }
   p{
     position: relative;
     top: 50vh;
