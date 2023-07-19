@@ -3,35 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Three.js tutorial</title>
+    <script type="module" src="scripts/3dscript.js"></script>
 </head>
 <body>
-    <canvas id="glCanvas" width="640px" height="480px" style="border: 1px solid black;"></canvas>
-
-    <script>
-        main();
-
-        //Começa aqui
-
-        function main(){
-            const canvas = document.querySelector("#glCanvas");
-            //Inici o contexto GL
-
-            const gl = canvas.getContext("webgl");
-
-            //Só continua se o webGl estiver disponível e funcionando
-
-            if (!gl){
-                alert("Incapaz de inicializar o webGL. Seu navegador ou sua máquina não suporta.");
-                return;
-            }
-
-            //Define a cor para preto totalmente opaca (sem transparência)
-            gl.clearColor(0.0, 0.0, 0.0, 1.0);
-            //Limpa o buffer de cores com uma cor especídica
-            gl.clear(gl.COLOR_BUFFER_BIT);
-
-        }
-    </script>
+    
 </body>
 </html>
