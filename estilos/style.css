@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url(../fontes/MINECRAFT\ PE.ttf);
+}
 body{
     padding: 0px;
     margin: 0px;
@@ -10,14 +14,11 @@ body{
 }
 
 h1{
+    font-family: "Minecraft";
     text-align: center;
+    color: white;
 }
-img::before{
-    position: relative;
-    height: 10px;
-    width: 10px;
-    background-color: red;
-}
+
 img{
     cursor: pointer;
     display: inline-block;
