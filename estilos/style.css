@@ -1,0 +1,28 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    image-rendering: pixelated;
+    background-image: radial-gradient(rgb(95, 95, 95), rgb(13, 13, 14));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+img{
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    margin: 5px;
+    border-image: url("../");
+}
+article{
+    transform: translate(-50%, 0%);
+    position: absolute;
+    left: 50%;
+    height: fit-content;
+    width: fit-content;
+}
